@@ -59,7 +59,7 @@ public class ViewshotModule extends NativeRTNViewshotSpec {
           public void run() {
             File file;
             try {
-              file = File.createTempFile(NAME, ".jpeg");
+              file = File.createTempFile(NAME, ".png");
             } catch (Throwable e) {
               promise.reject("File", "File creation failed", e);
               return;
@@ -69,7 +69,7 @@ public class ViewshotModule extends NativeRTNViewshotSpec {
             boolean compressSuccess;
             try {
               FileOutputStream fileOutputStream = new FileOutputStream(file);
-              compressSuccess = bitmap.compress(Bitmap.CompressFormat.JPEG, 100,
+              compressSuccess = bitmap.compress(Bitmap.CompressFormat.PNG, 100,
                                                 fileOutputStream);
               fileOutputStream.close();
             } catch (Throwable e) {

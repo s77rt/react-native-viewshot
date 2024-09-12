@@ -41,13 +41,13 @@ RCT_EXPORT_MODULE()
     dispatch_async(
         dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
           NSError *fileError;
-          NSString *filePath = RCTTempFilePath(@"jpeg", &fileError);
+          NSString *filePath = RCTTempFilePath(@"png", &fileError);
           if (fileError) {
             reject(@"File", @"File creation failed", fileError);
             return;
           }
 
-          NSData *imageData = UIImageJPEGRepresentation(image, 1.0);
+          NSData *imageData = UIImagePNGRepresentation(image);
 
           BOOL writeSuccess = [imageData writeToFile:filePath atomically:YES];
           if (!writeSuccess) {

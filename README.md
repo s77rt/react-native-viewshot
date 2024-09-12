@@ -45,7 +45,7 @@ const captureView = useCallback(() => {
 
 |   Name    |      Arguments       |                                                        Description                                                        |
 | :-------: | :------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
-| `capture` | `nodeHandle: number` | Capture a view given its handle/reactTag. Returns a `Promise<string>` with the file uri. **Note:** File is saved as JPEG. |
+| `capture` | `nodeHandle: number` | Capture a view given its handle/reactTag. Returns a `Promise<string>` with the file uri. **Note:** File is saved as PNG. |
 
 ## License
 

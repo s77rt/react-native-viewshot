@@ -1,6 +1,6 @@
 {
 	"name": "@s77rt/react-native-viewshot",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "A React Native module to capture views.",
 	"react-native": "js/index",
 	"source": "js/index",

@@ -1,11 +1,11 @@
-# react-native-viewshot
+# @s77rt/react-native-viewshot
 
 A React Native module to capture views.
 
 ## Installation
 
 ```bash
-npm install react-native-viewshot
+npm install @s77rt/react-native-viewshot
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ Use `Viewshot`
 
 ```jsx
 import { findNodeHandle } from "react-native";
-import Viewshot from "react-native-viewshot";
+import Viewshot from "@s77rt/react-native-viewshot";
 
 const captureView = useCallback(() => {
   const nodeHandle = findNodeHandle(viewRef.current);
